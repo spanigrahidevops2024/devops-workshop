@@ -57,6 +57,17 @@ sudo apt-get install terraform -y
 else
  echo "terraform OK"
  fi
-
- 
+echo ###############################################################
+which ansible
+var=$?
+if [ $var -ne 0 ]
+  then
+   echo " install ansible "
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible -y
+ else
+  echo "ansible install ok"
+  fi
  
