@@ -8,7 +8,7 @@
      set_fact:
       ansible_python_interpreter: /bin/python3
    - name: install httpd
-     dnf:
+     yum:
       name: httpd
       state: installed
    - name: cp index.html
