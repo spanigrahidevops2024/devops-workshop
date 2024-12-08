@@ -14,7 +14,7 @@
    - name: cp index.html
      copy:
       src: index.html
-      dest: /var/www/html
+      dest: /var/www/html/index.html
    - name: service mod
      service:
       name: httpd
