@@ -4,6 +4,9 @@
   remote_user: root
   become: yes
   tasks:
+   - name: ensure python install
+     set_fact:
+      ansible_python_interpreter: /bin/python3
    - name: install httpd
      dnf:
       name: httpd
