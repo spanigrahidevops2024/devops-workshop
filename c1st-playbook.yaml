@@ -8,12 +8,12 @@
      yum:
       name: httpd
       state: installed
-    - name: cp index.html
-      copy:
-        src: index.html
-        dest: /var/www/html
-    - name: service mod
-      service:
-        name: httpd
-        state: present
+   - name: cp index.html
+     copy:
+      src: index.html
+      dest: /var/www/html
+   - name: service mod
+     service:
+      name: httpd
+      state: started
         
